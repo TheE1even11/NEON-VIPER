@@ -1,61 +1,72 @@
 # ⚡ NEON VIPER // OVERDRIVE
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-1.0-00f3ff?style=for-the-badge" alt="Version 1.0.0">
-  <img src="https://img.shields.io/badge/Status-Playable-00ff66?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/Zero-Dependencies-ff0055?style=for-the-badge" alt="Dependencies">
+  <a href="https://thee1even11.github.io/NEON-VIPER-OVERDRIVE/"><img src="https://img.shields.io/badge/Version-1.0-00f3ff?style=for-the-badge" alt="Version 1.0"></a>
+  <img src="https://img.shields.io/badge/License-GPL_3.0-ff0055?style=for-the-badge" alt="License GPL-3.0">
+  <img src="https://img.shields.io/badge/Zero-Dependencies-00ff66?style=for-the-badge" alt="Zero Dependencies">
   <img src="https://img.shields.io/badge/Platform-Web%20%7C%20Mobile-ffe600?style=for-the-badge" alt="Platform">
-  <img src="https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-blueviolet?style=for-the-badge" alt="GitHub Pages">
+  <a href="https://thee1even11.github.io/NEON-VIPER-OVERDRIVE/"><img src="https://img.shields.io/badge/Play%20Online-GitHub%20Pages-9d00ff?style=for-the-badge" alt="Play Live"></a>
 </p>
 
 <p align="center">
-  <b>Neon Viper</b>, klasik yılan (Snake) mekaniğini alıp fütüristik siberpunk atmosferi, dinamik kombo zincirleri ve saf retro-arcade heyecanıyla yeniden yorumlayan bağımsız bir HTML5 tarayıcı oyunudur.
+  <b>Neon Viper: Overdrive</b> is a fast-paced, arcade-style snake remix built with pure HTML5 Canvas and the Web Audio API. Featuring dynamic combo systems, overdrive boost mechanics, procedural synth sound design, and rich particle feedback.
 </p>
 
 ---
 
-## 🎮 Canlı Demo (Live Preview)
-Oyunu tarayıcınızda anında oynamak için GitHub Pages linkinizi buraya ekleyin:
-👉 **[Neon Viper Oyna!](https://thee1even11.github.io/NEON-VIPER-OVERDRIVE/)**
+## 🎮 Play Live
+Play the game instantly in your web browser:  
+👉 **[https://thee1even11.github.io/NEON-VIPER-OVERDRIVE/](https://thee1even11.github.io/NEON-VIPER-OVERDRIVE/)**
 
 ---
 
-## 🕹️ Nasıl Oynanır? (Controls)
+## 🕹️ Controls
 
-### 💻 Masaüstü Kontrolleri
-| Tuş | Eylem |
+### 💻 Desktop
+| Key | Action |
 | :--- | :--- |
-| **W, A, S, D** veya **Yön Tuşları** | Yılanı yönlendir |
-| **SPACE** veya **SHIFT** (Basılı Tut) | **Hyper Boost** (Hızlanma) |
-| **P** veya **ESC** | Oyunu Duraklat / Devam Et |
-| **R** | Anında Yeniden Başlat (Restart) |
+| **W, A, S, D** or **Arrow Keys** | Steer Viper |
+| **SPACE** or **SHIFT** *(Hold)* | **Hyper Boost** (Double speed & multiplier) |
+| **P** or **ESC** | Pause / Resume |
+| **R** | Instant Restart |
 
-### 📱 Mobil & Dokunmatik Kontroller
-- **Sanal D-Pad:** Ekranın sol altındaki yön tuşları ile yönlendirin.
-- **Boost Düğmesi:** Sağ alttaki büyük neon butona basılı tutarak turbo hızına geçin.
-- **Swipe (Kaydırma):** Ekranda parmağınızı hızlıca kaydırarak da dönüş yapabilirsiniz.
-
----
-
-## 💎 Oyun Mekanikleri & Güçlendirmeler
-
-- 🔵 **Cyan Orb (Standart Küre):** Kombo sayacınızı yeniler, boyunuzu uzatır ve skoru artırır.
-- 🟡 **Super Nova (Sarı Elmas):** Sınırlı süre ekranda kalır. Yüksek skor verir ve Boost enerjinizi %100 doldurur.
-- 🟣 **Ghost Phase (G Power-up):** Aktif olduğunda mor renge bürünürsünüz ve kendi kuyruğunuzun içinden yanmadan geçebilirsiniz.
-- 🟢 **Magnet Field (M Power-up):** Küreleri kendinize doğru çeken manyetik bir çekim alanı oluşturur.
-- 🔴 **Hyper Drive (H Power-up):** Kombo çarpanınızı anında tırmandırır.
+### 📱 Mobile & Touch
+- **Virtual D-Pad:** On-screen directional buttons (bottom-left).
+- **Boost Button:** Hold the glowing blue trigger (bottom-right) to engage Overdrive.
+- **Swipe Gestures:** Swipe anywhere on the screen for swift directional changes.
 
 ---
 
-## 🛠️ Teknik Özellikler
+## 💎 Core Mechanics & Power-ups
 
-- **Tek Dosya Mimarisi:** Dışarıdan hiçbir görsel, kütüphane veya `.mp3` indirmez. HTML + CSS + JS tek bir `index.html` içindedir.
-- **Web Audio API Sentezleyici:** Bütün ses efektleri (ısırık, bas patlamaları, boost uğultusu) gerçek zamanlı osilatörlerle sentezlenir.
-- **Input Buffering (Girdi Tamponu):** Arka arkaya hızlı basılan tuşları kaçırmaz, dönüşleri sıraya koyar.
-- **Yerel Lider Tablosu (Local Leaderboard):** En yüksek skorları ve kombo rekorlarını tarayıcınızın `localStorage` alanında saklar.
-- **Akıllı Ekran Uyumu:** Yüksek DPI (Retina) ekranları destekleyen dinamik Canvas ölçeklendirmesi.
+- 🔵 **Cyan Orb (Standard Food):** Extends viper length, refills boost gauge, and builds your combo meter.
+- 🟡 **Super Nova (Timed Diamond):** High-value pickup that instantly refills 100% boost energy and awards +500 points.
+- 🟣 **Ghost Phase (G Capsule):** Renders your body intangible, allowing you to pass through your own tail unharmed.
+- 🟢 **Magnet Field (M Capsule):** Generates a localized gravitational field pulling nearby orbs directly to you.
+- 🔴 **Hyper Drive (H Capsule):** Instantly accelerates your combo multiplier up to **8.0x**.
 
 ---
 
-## 📜 Lisans
-Bu proje **GPL 3.0 Lisansı** altında sunulmaktadır.
+## 🛠️ Architecture & Technical Highlights
+
+- **Single-File Zero Dependency Engine:** Self-contained in one file with no external CSS, fonts, or JS bundles.
+- **Real-Time Audio Synthesis:** Complete procedural sound engine using the native Web Audio API (no `.mp3` or `.wav` asset downloads).
+- **Input Buffer Queue:** Eliminates input latency and ensures high-speed multi-key turns execute without loss.
+- **Sub-Tick Interpolation:** Smooth 60 FPS rendering regardless of the discrete logic tick rate.
+- **Persistent Leaderboard:** Saves high scores, multipliers, and run stats locally via `localStorage`.
+
+---
+
+## 📌 Versioning Roadmap
+
+This project follows a stepped versioning system:
+- **`1.0`** *(Current Initial Release)*
+- **`1.01`** *(Minor adjustments / patches)*
+- **`1.1`** *(Major feature release)*
+- **`1.11`** *(Follow-up patch / fixes)*
+
+---
+
+## 📜 License
+
+Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See the `LICENSE` file for more details.
